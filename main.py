@@ -5,7 +5,7 @@ from nltk.stem.porter import PorterStemmer
 from sklearn.metrics.pairwise import cosine_similarity
 
 movies=pd.read_csv("tmdb_5000_movies.csv")
-credits=pd.read_csv("tmdb_5000_credits.csv")
+credits=pd.read_csv("credits.csv")
 
 movies=movies.merge(credits,on='title')
 
